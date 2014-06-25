@@ -1,4 +1,6 @@
-package org.arthur.sort;
+package org.arthur.sort.impl;
+
+import org.arthur.sort.Sort;
 
 /**
  * @author Arthur Grava (arthur at luizalabs.com).

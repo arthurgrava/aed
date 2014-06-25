@@ -1,5 +1,6 @@
 package org.arthur.sort;
 
+import org.arthur.sort.impl.Heapsort;
 import org.junit.Assert;
 import org.junit.Test;
 
