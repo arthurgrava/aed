@@ -4,6 +4,11 @@ import org.arthur.sort.Sort;
 
 /**
  * @author Arthur Grava (arthur at luizalabs.com).
+ *
+ * Implementation of Heapsort, it sorts the array by creating max-heaps and putting
+ * the max value (position 0) at the end of the array, marking it as sorted and decreasing
+ * the value of the array size. It does it (n - 1) times getting a performance of O(n * log n)
+ *
  */
 public class Heapsort implements Sort {
 
