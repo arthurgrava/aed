@@ -1,6 +1,6 @@
 package org.arthur.list;
 
-import org.arthur.structs.Element;
+import org.arthur.structs.LinkedElement;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,11 +11,11 @@ import org.junit.Test;
 public class LinkedListTest {
 
     private final LinkedList list = new LinkedList();
-    private Element root;
+    private LinkedElement root;
 
     @Before
     public void init() {
-        root = new Element();
+        root = new LinkedElement();
         list.insert(root, 5);
         list.insert(root, 7);
         list.insert(root, 9);
@@ -27,7 +27,7 @@ public class LinkedListTest {
 
     @Test
     public void testGet() {
-        Element result = list.get(root, 9);
+        LinkedElement result = list.get(root, 9);
 
         Assert.assertNotNull(result);
         Assert.assertEquals(new Integer(9), result.getInfo());
@@ -39,7 +39,7 @@ public class LinkedListTest {
 
     @Test
     public void testRemove() {
-        Element result = list.remove(root, 9);
+        LinkedElement result = list.remove(root, 9);
 
         Assert.assertNotNull(result);
         Assert.assertEquals(new Integer(9), result.getInfo());
@@ -55,7 +55,7 @@ public class LinkedListTest {
 
         Assert.assertFalse(empty);
 
-        empty = list.isEmpty(new Element());
+        empty = list.isEmpty(new LinkedElement());
 
         Assert.assertTrue(empty);
 

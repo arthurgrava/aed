@@ -5,28 +5,22 @@ package org.arthur.structs;
  */
 public class Element {
 
-    private Integer info;
-    private Element next;
+    private Integer element;
 
-    public Element() { }
-
-    public Element(Integer info) {
-        this.info = info;
+    public Element(Integer element) {
+        this.element = element;
     }
 
-    public Element getNext() {
-        return next;
+    public Integer getElement() {
+        return element;
     }
 
-    public void setNext(Element next) {
-        this.next = next;
+    public void setElement(Integer element) {
+        this.element = element;
     }
 
-    public Integer getInfo() {
-        return info;
-    }
-
-    public void setInfo(Integer info) {
-        this.info = info;
+    @Override
+    public String toString() {
+        return this.element.toString();
     }
 }

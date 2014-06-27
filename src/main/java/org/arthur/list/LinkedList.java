@@ -1,17 +1,17 @@
 package org.arthur.list;
 
-import org.arthur.structs.Element;
+import org.arthur.structs.LinkedElement;
 
 /**
  * @author Arthur Grava (arthur at luizalabs.com).
  */
 public class LinkedList {
 
-    public Element get(Element root, int info) {
+    public LinkedElement get(LinkedElement root, int info) {
         if(root == null)
             return null;
         else {
-            Element next = root;
+            LinkedElement next = root;
 
             while(next != null && next.getInfo() != info) {
                 next = next.getNext();
@@ -21,36 +21,36 @@ public class LinkedList {
         }
     }
 
-    public void insert(Element root, int info) {
-        Element element = new Element(info);
+    public void insert(LinkedElement root, int info) {
+        LinkedElement linkedElement = new LinkedElement(info);
 
         if(root == null || root.getInfo() == null) {
-            root.setInfo(element.getInfo());
+            root.setInfo(linkedElement.getInfo());
         } else {
-            Element next = root;
+            LinkedElement next = root;
             while(next.getNext() != null) {
                 next = next.getNext();
             }
-            next.setNext(element);
+            next.setNext(linkedElement);
         }
     }
 
-    public Element remove(Element root, int info) {
+    public LinkedElement remove(LinkedElement root, int info) {
         if(root == null)
             return null;
         else if (root.getInfo() == info) {
-            Element next = root;
+            LinkedElement next = root;
             root = null;
             return next;
         } else {
-            Element next = root;
+            LinkedElement next = root;
 
             while(next.getNext() != null && info != next.getNext().getInfo()) {
                 next = next.getNext();
             }
 
             if(next.getNext() != null) {
-                Element found = next.getNext();
+                LinkedElement found = next.getNext();
                 next.setNext(null);
                 return found;
             }
@@ -59,7 +59,7 @@ public class LinkedList {
         }
     }
 
-    public boolean isEmpty(Element root) {
+    public boolean isEmpty(LinkedElement root) {
         if(root != null && root.getInfo() != null)
             return false;
         return true;
