@@ -1,4 +1,4 @@
-package org.arthur.structs;
+package org.arthur.types;
 
 /**
  * @author Arthur Grava (arthur at luizalabs.com).

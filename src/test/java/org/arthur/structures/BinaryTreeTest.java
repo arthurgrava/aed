@@ -1,7 +1,7 @@
-package org.arthur.trees;
+package org.arthur.structures;
 
 
-import org.arthur.structs.BinaryNode;
+import org.arthur.types.BinaryNode;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

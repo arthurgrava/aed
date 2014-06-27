@@ -1,6 +1,6 @@
-package org.arthur.trees;
+package org.arthur.structures;
 
-import org.arthur.structs.BinaryNode;
+import org.arthur.types.BinaryNode;
 
 /**
  * @author Arthur Grava (arthur at luizalabs.com).

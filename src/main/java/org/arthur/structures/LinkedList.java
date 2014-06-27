@@ -1,6 +1,6 @@
-package org.arthur.list;
+package org.arthur.structures;
 
-import org.arthur.structs.LinkedElement;
+import org.arthur.types.LinkedElement;
 
 /**
  * @author Arthur Grava (arthur at luizalabs.com).

@@ -1,6 +1,7 @@
-package org.arthur.list;
+package org.arthur.structures;
 
-import org.arthur.structs.LinkedElement;
+import org.arthur.structures.LinkedList;
+import org.arthur.types.LinkedElement;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,6 +1,6 @@
-package org.arthur.list;
+package org.arthur.structures;
 
-import org.arthur.structs.Element;
+import org.arthur.types.Element;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
